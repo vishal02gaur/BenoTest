@@ -30,6 +30,7 @@ public class BenoApplication extends Application implements HasActivityInjector,
 
     @Override
     public void onCreate() {
+    
         super.onCreate();
         DaggerAppComponent.builder().application(this).build().inject(this);
     }
